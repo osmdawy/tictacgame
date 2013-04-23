@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/myLinearLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<Spinner
+	    android:id="@+id/background_spinner"
+	    android:layout_width="120dp"
+	    android:layout_height="50dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/selection"
+	    android:layout_marginRight="14dp" />
+
+	<Spinner
+	    android:id="@+id/line_color_spinner"
+	    android:layout_width="120dp"
+	    android:layout_height="50dp"
+	    android:layout_alignLeft="@+id/background_spinner"
+	    android:layout_below="@+id/background_spinner"
+	    android:layout_marginTop="32dp" />
+
+	<Spinner
+	    android:id="@+id/o_marker_color_spinner"
+	    android:layout_width="120dp"
+	    android:layout_height="50dp"
+	    android:layout_alignLeft="@+id/line_color_spinner"
+	    android:layout_below="@+id/line_color_spinner"
+	    android:layout_marginTop="34dp" />
+
+	<Spinner
+	    android:id="@+id/x_marker_color_spinner"
+	    android:layout_width="120dp"
+	    android:layout_height="50dp"
+	    android:layout_alignLeft="@+id/o_marker_color_spinner"
+	    android:layout_below="@+id/o_marker_color_spinner"
+	    android:layout_marginTop="35dp" />
+
+	<TextView
+	    android:id="@+id/background_color"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/background_spinner"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="15dp"
+	    android:text="Background Color"
+	    android:textSize="@dimen/new_text_size" />
+
+	<TextView
+	    android:id="@+id/line_color"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignTop="@+id/line_color_spinner"
+	    android:text="Line Color"
+	    android:textSize="@dimen/new_text_size" />
+
+	<TextView
+	    android:id="@+id/o_marker_color"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignTop="@+id/o_marker_color_spinner"
+	    android:text="O Marker Color"
+	    android:textSize="@dimen/new_text_size" />
+
+	<TextView
+	    android:id="@+id/x_marker_color"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignTop="@+id/x_marker_color_spinner"
+	    android:text="X Marker Color"
+	    android:textSize="@dimen/new_text_size" />
+
+	<Button
+	    android:id="@+id/cancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignRight="@+id/x_marker_color_spinner"
+	    android:text="Cancel" />
+
+	<Button
+	    android:id="@+id/ok"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/x_marker_color_spinner"
+	    android:layout_alignParentBottom="true"
+	    android:onClick="ok"
+	    android:text="OK" />
+
+</RelativeLayout>
